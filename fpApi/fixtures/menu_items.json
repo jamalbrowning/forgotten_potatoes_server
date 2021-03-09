@@ -1,0 +1,201 @@
+[
+  {
+    "model": "fpApi.menu_item",
+    "pk": 1,
+    "fields": {
+      "menu_id": 1,
+      
+      "name": "Peel n' Eat Shrimp",
+      "description":"1/2 lb. of shrimp served with cocktail sauce, creamy Cajun sauce and lemon wedges.",
+      "price": 10.99,
+      "category": "Appetizer"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 2,
+    "fields": {
+      "menu_id": 1,
+      "name": "Made-From-Scratch Loaded Potatoes",
+      "description":"Topped with bacon, shredded cheddar cheese, green onions & served with sour cream.",
+      "price": 8.79,
+      "category": "Appetizer"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 3,
+    "fields": {
+      "menu_id": 1,
+      "name": "Mozzarella Sticks",
+      "description":"Served with marinara sauce",
+      "price": 6.99,
+      "category": "Appetizer"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 4,
+    "fields": {
+      "menu_id": 1,
+      "name": "Crispy Crab Cakes",
+      "description":"Three lightly fried crab cakes served on a bed of crispy onions and a side of creamy Cajun sauce. ",
+      "price": 9.99,
+      "category": "Appetizer"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 4,
+    "fields": {
+      "menu_id": 1,
+      "name": "Spinach & Artichoke Dip",
+      "description":"A warm, creamy blend of spinach, artichokes, Swiss and Parmesan cheeses, served with house-made tortilla chips.",
+      "price": 8.99,
+      "category": "Appetizer"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 5,
+    "fields": {
+      "menu_id": 1,
+      "name": "Mesquite Smokin Wings",
+      "description":"Grilled over our real mesquite wood and smothered with your choice of Teriyaki, Buffalo, Chipotle or BBQ sauce.",
+      "price": 11.99,
+      "category": "Appetizer"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 6,
+    "fields": {
+      "menu_id": 1,
+      "name": "Rockin' Onion Petals",
+      "description":"Grab a bucketful of onion petals for the whole table. Served with Texas petal sauce for the ultimate dipping experience.",
+      "price": 6.99,
+      "category": "Appetizer"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 7,
+    "fields": {
+      "menu_id": 1,
+      "name": "6 OZ. Sirloin",
+      "description":"Tender and juicy, this USDA Choice Sirloin is sure to please!",
+      "price": 10.99,
+      "category": "Steaks"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 8,
+    "fields": {
+      "menu_id": 1,
+      "name": "Chopped Steak",
+      "description":"1/2 lb. chopped steak served on a bed of mashed potatoes covered with brown gravy, Brewski Onions® and sautéed mushrooms.",
+      "price": 12.49,
+      "category": "Steaks"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 9,
+    "fields": {
+      "menu_id": 1,
+      "name": "The Logan",
+      "description":"Our signature USDA Choice 12 oz. Sirloin.",
+      "price": 16.99,
+      "category": "Steaks"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 10,
+    "fields": {
+      "menu_id": 1,
+      "name": "Country Fried Steak",
+      "description":"Topped with white pepper gravy.",
+      "price": 12.99,
+      "category": "Steaks"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 11,
+    "fields": {
+      "menu_id": 1,
+      "name": "New York Strip",
+      "description":"12 ounces of USDA Choice goodness.",
+      "price": 18.99,
+      "category": "Steaks"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 12,
+    "fields": {
+      "menu_id": 1,
+      "name": "Porterhouse",
+      "description":"At 22 ounces, this USDA Choice steak is the king of the T-Bones.",
+      "price": 27.49,
+      "category": "Steaks"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 13,
+    "fields": {
+      "menu_id": 1,
+      "name": "Handcut Signature Ribeye",
+      "description":"Hand-cut, marbled & full of flavor. 12 OZ",
+      "price": 18.99,
+      "category": "Steaks"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 14,
+    "fields": {
+      "menu_id": 1,
+      "name": "Handcut Signature Ribeye",
+      "description":"Hand-cut, marbled & full of flavor. 16 OZ",
+      "price": 21.99,
+      "category": "Steaks"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 15,
+    "fields": {
+      "menu_id": 1,
+      "name": "16 OZ. Roadhouse T-Bone",
+      "description":"The perfect combo in one steak – get the tenderness of a filet and the well-marbled flavor of a strip.",
+      "price": 23.99,
+      "category": "Steaks"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 16,
+    "fields": {
+      "menu_id": 1,
+      "name": "Meat Loaf Roadies",
+      "description":"Three mini meatloaf sliders with mashed potato, crispy onions & BBQ sauce on our signature yeast rolls.",
+      "price": 9.99,
+      "category": "Burgers & Sandwhiches"
+    }
+  },
+  {
+    "model": "fpApi.menu_item",
+    "pk": 17,
+    "fields": {
+      "menu_id": 1,
+      "name": "Peppercorn Bacon Chicken Sandwhich",
+      "description":"All-natural, grilled chicken breast smothered in our famous Parmesan Peppercorn dressing & topped with American cheese and thick-cut hardwood bacon. Served with house-made potato chips or fries.",
+      "price": 10.49,
+      "category": "Burgers & Sandwhiches"
+    }
+  },
+]

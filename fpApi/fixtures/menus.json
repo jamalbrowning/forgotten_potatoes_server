@@ -1,0 +1,42 @@
+[
+  {
+    "model": "fpApi.menu",
+    "pk": 1,
+    "fields": {
+      "rest_id": 1,
+      "name": "Appetizers"    
+    }
+  },
+  {
+    "model": "fpApi.menu",
+    "pk": 2,
+    "fields": {
+      "rest_id": 2,
+      "name": "Dinner"    
+    }
+  },
+  {
+    "model": "fpApi.menu",
+    "pk": 3,
+    "fields": {
+      "rest_id": 2,
+      "name": "BreakFast"    
+    }
+  },
+  {
+    "model": "fpApi.menu",
+    "pk": 4,
+    "fields": {
+      "rest_id": 3,
+      "name": "Main"    
+    }
+  },
+  {
+    "model": "fpApi.menu",
+    "pk": 5,
+    "fields": {
+      "rest_id": 4,
+      "name": "Dinner"    
+    }
+  }
+]

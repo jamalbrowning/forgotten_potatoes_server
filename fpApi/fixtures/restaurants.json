@@ -1,0 +1,30 @@
+[
+  {
+      "model": "fpApi.restaurant",
+      "pk": 1,
+      "fields": {
+        "name": "Logans Road House"
+      }
+  },
+  {
+      "model": "fpApi.restaurant",
+      "pk": 2,
+      "fields": {
+        "name": "Cafe Rio"
+      }
+  },
+  {
+      "model": "fpApi.restaurant",
+      "pk": 3,
+      "fields": {
+        "name": "McDonalds"
+      }
+  },
+  {
+      "model": "fpApi.restaurant",
+      "pk": 4,
+      "fields": {
+        "name": "Otaku Ramen"
+      }
+  }
+]
