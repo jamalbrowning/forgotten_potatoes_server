@@ -14,8 +14,24 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+from django.conf import settings
+from django.conf.urls import url, include
+from django.conf.urls.static import static
+from rest_framework import routers
+from rest_framework.authtoken.views import obtain_auth_token
+from fpApi.models import *
+from fpApi.views import *
 from django.urls import path
 
+# pylint: disable=invalid-name
+router = routers.DefaultRouter(trailing_slash=False)
+router.register(r'users', UsersViewset, 'user')
+
 urlpatterns = [
+    url(r'^', include(router.urls)),
+    url(r'^register$', register_user),
+    url(r'^login$', login_user),
+    url(r'^api-token-auth$', obtain_auth_token),
+    url(r'^api-auth', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
 ]
