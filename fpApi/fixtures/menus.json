@@ -3,40 +3,35 @@
     "model": "fpApi.menu",
     "pk": 1,
     "fields": {
-      "rest_id": 1,
-      "name": "Appetizers"    
+      "rest_id": 1  
     }
   },
   {
     "model": "fpApi.menu",
     "pk": 2,
     "fields": {
-      "rest_id": 2,
-      "name": "Dinner"    
+      "rest_id": 2   
     }
   },
   {
     "model": "fpApi.menu",
     "pk": 3,
     "fields": {
-      "rest_id": 2,
-      "name": "BreakFast"    
+      "rest_id": 2 
     }
   },
   {
     "model": "fpApi.menu",
     "pk": 4,
     "fields": {
-      "rest_id": 3,
-      "name": "Main"    
+      "rest_id": 3
     }
   },
   {
     "model": "fpApi.menu",
     "pk": 5,
     "fields": {
-      "rest_id": 4,
-      "name": "Dinner"    
+      "rest_id": 4 
     }
   }
 ]

@@ -10,7 +10,7 @@
           "first_name": "Jim",
           "last_name": "Browning",
           "email": "me@me.com",
-          "restaurant_user": false,
+          "is_staff": false,
           "date_joined": "2020-08-28T14:51:39.989Z",
           "groups": [],
           "user_permissions": []

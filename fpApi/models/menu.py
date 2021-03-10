@@ -5,4 +5,3 @@ from django.db.models.fields.related import ForeignKey
 
 class Menu(models.Model):
     rest_id = models.ForeignKey("Restaurant", on_delete=CASCADE)
-    name = models.CharField(max_length=50)
