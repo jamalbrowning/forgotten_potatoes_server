@@ -1,0 +1,22 @@
+[
+  {
+    "model": "fpApi.review",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "rating": 5,
+      "comment": "wow this was so good",
+      "menu_item_id": 11
+    }
+  },
+  {
+    "model": "fpApi.review",
+    "pk": 1,
+    "fields": {
+      "user": 1,
+      "rating": 5,
+      "comment": "wow this was so good",
+      "menu_item_id": 15
+    }
+  }
+]
