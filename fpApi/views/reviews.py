@@ -1,13 +1,35 @@
-from rest_framework import viewsets, filters
+from django.core.exceptions import ValidationError
+from rest_framework import status, viewsets, filters
 from rest_framework.generics import get_object_or_404
 from rest_framework.viewsets import ViewSet
-from fpApi.models import Review, review
-from fpApi.serializers import ReviewSerializer
+from fpApi import serializers
+from fpApi.models import Review, PotatoUser
+from fpApi.serializers import ReviewSerializer, ReviewSerializerCreate
 from django.contrib.auth.models import User
 from rest_framework.response import Response
 
 
 class ReviewViewSet(viewsets.ModelViewSet):
+
+    queryset = Review.objects.all()
+    serializer_class = ReviewSerializerCreate
+    filter_fields = ('user')
+    # def create(self, request):
+    #     user = PotatoUser.objects.get(user=request.auth.user)
+
+    #     review = Review
+    #     review.user = user
+    #     review.rating = request.data["rating"]
+    #     review.comment = request.data["comment"]
+    #     review.menu_item_id = request.data["menu_item_id"]
+
+    #     try:
+    #         review.save()
+    #         serializer = ReviewSerializer(review, context={'request': request})
+    #         return Response(serializer.data)
+
+    #     except ValidationError as ex:
+    #         return Response({"reason": ex.message}, status=status.status.HTTP_400_BAD_REQUEST)
 
     def list(self, request):
         """Handle GET requests to reviews resource
@@ -28,6 +50,3 @@ class ReviewViewSet(viewsets.ModelViewSet):
         serializer = ReviewSerializer(
             reviews, many=True, context={'request': request})
         return Response(serializer.data)
-    # queryset = Review.objects.all()
-    # serializer_class = ReviewSerializer
-    # filter_fields = ('user')

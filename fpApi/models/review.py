@@ -9,4 +9,5 @@ class Review(models.Model):
                              related_name='reviewers', related_query_name="reviewer")
     rating = models.IntegerField()
     comment = models.TextField()
-    menu_item_id = models.ForeignKey("MenuItem", on_delete=CASCADE)
+    menu_item_id = models.ForeignKey(
+        "MenuItem", on_delete=CASCADE)
