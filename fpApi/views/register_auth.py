@@ -1,3 +1,4 @@
+from fpApi.models import PotatoUser
 import json
 from django.http import HttpResponse, HttpResponseNotAllowed
 from django.contrib.auth import authenticate
@@ -61,11 +62,14 @@ def register_user(request):
     )
 
     # Commit the user to the database by saving it
-    new_user.save()
+    potato_user = PotatoUser.objects.create(
+        user=new_user
+    )
 
+    potato_user.save()
     # Use the REST Framework's token generator on the new user account
     token = Token.objects.create(user=new_user)
 
     # Return the token to the client
-    data = json.dumps({"token": token.key, "id": new_user.id})
-    return HttpResponse(data, content_type='application/json', status=status.HTTP_201_CREATED)
+    data = json.dumps({"token": token.key})
+    return HttpResponse(data, content_type='application/json')
