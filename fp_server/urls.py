@@ -35,6 +35,7 @@ router.register(r'menus', MenuViewSet, 'menu')
 router.register(r'reviews', ReviewViewSet, 'review')
 
 urlpatterns = [
+    # url(r'^reviews$', include('review-list')),
     url(r'^', include(router.urls)),
     url(r'^register$', register_user),
     url(r'^login$', login_user),
