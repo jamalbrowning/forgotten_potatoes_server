@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 
 
 class Review(models.Model):
-    user = models.OneToOneField(User, on_delete=CASCADE)
+    user = models.ForeignKey(User, on_delete=CASCADE)
     rating = models.IntegerField()
     comment = models.TextField()
     menu_item_id = models.ForeignKey("MenuItem", on_delete=CASCADE)

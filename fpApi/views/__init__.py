@@ -3,3 +3,4 @@ from .user import UsersViewset
 from .restaurants import *
 from .menuItem import *
 from .menus import *
+from .reviews import *
