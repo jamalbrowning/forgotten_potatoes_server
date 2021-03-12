@@ -31,9 +31,11 @@ router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', UsersViewset, 'user')
 router.register(r'restaurants', RestaurantViewSet, 'restaurant')
 router.register(r'menuitems', MenuItemViewSet, 'menuitem')
-router.register(r'menus')
+router.register(r'menus', MenuViewSet, 'menu')
+router.register(r'reviews', ReviewViewSet, 'review')
 
 urlpatterns = [
+    # url(r'^reviews$', include('review-list')),
     url(r'^', include(router.urls)),
     url(r'^register$', register_user),
     url(r'^login$', login_user),

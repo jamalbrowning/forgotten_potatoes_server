@@ -1,0 +1,16 @@
+[
+  {
+    "model": "fpApi.potatouser",
+    "pk": 1,
+    "fields": {
+      "user": 1  
+    }
+  },
+  {
+    "model": "fpApi.potatouser",
+    "pk": 2,
+    "fields": {
+      "user": 2  
+    }
+  }
+]

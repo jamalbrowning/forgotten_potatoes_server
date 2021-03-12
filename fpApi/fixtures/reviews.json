@@ -11,9 +11,19 @@
   },
   {
     "model": "fpApi.review",
-    "pk": 1,
+    "pk": 2,
     "fields": {
       "user": 1,
+      "rating": 3,
+      "comment": "wow this was so good",
+      "menu_item_id": 15
+    }
+  },
+  {
+    "model": "fpApi.review",
+    "pk": 3,
+    "fields": {
+      "user": 2,
       "rating": 5,
       "comment": "wow this was so good",
       "menu_item_id": 15
