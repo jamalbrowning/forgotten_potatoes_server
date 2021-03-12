@@ -13,6 +13,8 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
+from fpApi.views.menuItem import MenuItemViewSet
 from fpApi.views.restaurants import RestaurantViewSet
 from django.contrib import admin
 from django.conf import settings
@@ -28,6 +30,7 @@ from django.urls import path
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', UsersViewset, 'user')
 router.register(r'restaurants', RestaurantViewSet, 'restaurant')
+router.register(r'menuitems', MenuItemViewSet, 'menuitem')
 
 urlpatterns = [
     url(r'^', include(router.urls)),
