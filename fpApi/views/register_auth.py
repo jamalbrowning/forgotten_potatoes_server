@@ -10,35 +10,33 @@ from rest_framework.authtoken.models import Token
 
 @csrf_exempt
 def login_user(request):
-    '''Handles the authentication of a user
+    '''Handles the authentication of a gamer
     Method arguments:
       request -- The full HTTP request object
     '''
 
-    body = request.body.decode('utf-8')
-    req_body = json.loads(body)
+    req_body = json.loads(request.body.decode())
 
     # If the request is a HTTP POST, try to pull out the relevant information.
     if request.method == 'POST':
 
         # Use the built-in authenticate method to verify
-        name = req_body['username']
-        pass_word = req_body['password']
-        authenticated_user = authenticate(username=name, password=pass_word)
+        username = req_body['username']
+        password = req_body['password']
+        authenticated_user = authenticate(username=username, password=password)
 
         # If authentication was successful, respond with their token
         if authenticated_user is not None:
             token = Token.objects.get(user=authenticated_user)
+            current_user = authenticated_user
             data = json.dumps(
-                {"valid": True, "token": token.key, "id": authenticated_user.id})
+                {"valid": True, "token": token.key, "user_id": current_user.id})
             return HttpResponse(data, content_type='application/json')
 
         else:
             # Bad login details were provided. So we can't log the user in.
             data = json.dumps({"valid": False})
             return HttpResponse(data, content_type='application/json')
-
-    return HttpResponseNotAllowed(permitted_methods=['POST'])
 
 
 @csrf_exempt
