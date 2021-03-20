@@ -4,8 +4,8 @@ from django.db.models.fields import CharField
 
 
 class MenuItem(models.Model):
-    menu = models.ForeignKey(
-        "Menu", on_delete=models.CASCADE, null=True)
+    restaurant = models.ForeignKey(
+        "Restaurant", on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=50)
     description = models.TextField(max_length=400)
     price = models.FloatField()

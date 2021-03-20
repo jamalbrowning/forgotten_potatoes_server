@@ -5,4 +5,4 @@ from fpApi.models import *
 class MenuItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = MenuItem
-        fields = ('id', 'name', "description", "price", "category")
+        fields = ('id','restaurant', 'name', "description", "price", "category")
