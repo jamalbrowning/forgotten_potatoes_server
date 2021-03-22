@@ -14,22 +14,7 @@ class ReviewViewSet(viewsets.ModelViewSet):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializerCreate
     filter_fields = ('user', "menu_item_id")
-    # def create(self, request):
-    #     user = PotatoUser.objects.get(user=request.auth.user)
-
-    #     review = Review
-    #     review.user = user
-    #     review.rating = request.data["rating"]
-    #     review.comment = request.data["comment"]
-    #     review.menu_item_id = request.data["menu_item_id"]
-
-    #     try:
-    #         review.save()
-    #         serializer = ReviewSerializer(review, context={'request': request})
-    #         return Response(serializer.data)
-
-    #     except ValidationError as ex:
-    #         return Response({"reason": ex.message}, status=status.status.HTTP_400_BAD_REQUEST)
+    
     def retrieve(self, request, pk=None):
         queryset = Review.objects.all()
         review = get_object_or_404(queryset, pk=pk)
