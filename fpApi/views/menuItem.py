@@ -16,7 +16,7 @@ class MenuItemViewSet(viewsets.ModelViewSet):
           Response -- JSON serialized list of games
       """
       # Get all game records from the database
-      menu_items = MenuItem.objects.all()
+      menu_items = MenuItem.objects.all().order_by("name")
 
       # Support filtering games by type
       #    http://localhost:8000/games?type=1

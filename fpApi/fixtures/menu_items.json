@@ -202,10 +202,32 @@
     "pk": 19,
     "fields": {
       "restaurant": 2,
-      "name": "Chicken Bowl",
+      "name": "Chicken Burrito",
       "description":"Chicken",
       "price": 10.49,
-      "category": "Bowls"
+      "category": "Burrito"
+    }
+  },
+  {
+    "model": "fpApi.menuItem",
+    "pk": 20,
+    "fields": {
+      "restaurant": 2,
+      "name": "Shredded Chicken Burrito",
+      "description":"Chicken",
+      "price": 10.49,
+      "category": "Burrito"
+    }
+  },
+  {
+    "model": "fpApi.menuItem",
+    "pk": 21,
+    "fields": {
+      "restaurant": 2,
+      "name": "Sweet Pork Barbacoa Burrito",
+      "description":"Chicken",
+      "price": 10.49,
+      "category": "Burrito"
     }
   }
 ]

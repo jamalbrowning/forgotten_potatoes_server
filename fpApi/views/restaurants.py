@@ -6,8 +6,5 @@ from fpApi.serializers import RestaurantSerializer
 
 
 class RestaurantViewSet(viewsets.ModelViewSet):
-    queryset = Restaurant.objects.all()
+    queryset = Restaurant.objects.all().order_by("name")
     serializer_class = RestaurantSerializer
-
-
-  
