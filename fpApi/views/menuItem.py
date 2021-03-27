@@ -8,20 +8,18 @@ from rest_framework.generics import get_object_or_404
 class MenuItemViewSet(viewsets.ModelViewSet):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
-    filter_fields = ( 'user', "restaurant")
+    filter_fields = ('user', "restaurant", "category")
 
     def list(self, request):
       """Handle GET requests to reviews resource
       Returns:
           Response -- JSON serialized list of games
       """
-      # Get all game records from the database
+      # Get all menu-items records from the database
       menu_items = MenuItem.objects.all().order_by("name")
 
-      # Support filtering games by type
-      #    http://localhost:8000/games?type=1
-      #
-      # That URL will retrieve all tabletop games
+      # Support filtering menu_items by restaurant
+
       restaurant = self.request.query_params.get('restaurant', None)
       if restaurant is not None:
           menu_items = menu_items.filter(restaurant__id=restaurant)

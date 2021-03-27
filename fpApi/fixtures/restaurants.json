@@ -26,5 +26,33 @@
       "fields": {
         "name": "Otaku Ramen"
       }
+  },
+  {
+      "model": "fpApi.restaurant",
+      "pk": 5,
+      "fields": {
+        "name": "Once Upon A Time In France"
+      }
+  },
+  {
+      "model": "fpApi.restaurant",
+      "pk": 6,
+      "fields": {
+        "name": "Athens Greek Restaurant"
+      }
+  },
+  {
+      "model": "fpApi.restaurant",
+      "pk": 7,
+      "fields": {
+        "name": "Etch"
+      }
+  },
+  {
+      "model": "fpApi.restaurant",
+      "pk": 8,
+      "fields": {
+        "name": "McNamara's Irish Pub"
+      }
   }
 ]

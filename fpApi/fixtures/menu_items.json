@@ -229,5 +229,60 @@
       "price": 10.49,
       "category": "Burrito"
     }
+  },
+  {
+    "model": "fpApi.menuItem",
+    "pk": 22,
+    "fields": {
+      "restaurant": 4,
+      "name": "Tennessee Tonkotsu",
+      "description":"",
+      "price": 15.00,
+      "category": "Ramen"
+    }
+  },
+  {
+    "model": "fpApi.menuItem",
+    "pk": 23,
+    "fields": {
+      "restaurant": 4,
+      "name": "Shoyu",
+      "description":"",
+      "price": 14.00,
+      "category": "Ramen"
+    }
+  },
+  {
+    "model": "fpApi.menuItem",
+    "pk": 24,
+    "fields": {
+      "restaurant": 4,
+      "name": "Monster Style",
+      "description":"",
+      "price": 19.00,
+      "category": "Ramen"
+    }
+  },
+  {
+    "model": "fpApi.menuItem",
+    "pk": 25,
+    "fields": {
+      "restaurant": 4,
+      "name": "Spicy Miso",
+      "description":"",
+      "price": 15.00,
+      "category": "Ramen"
+    }
+  },
+  {
+    "model": "fpApi.menuItem",
+    "pk": 26,
+    "fields": {
+      "restaurant": 4,
+      "name": "Szechuan Pork Miso",
+      "description":"",
+      "price": 16.00,
+      "category": "Ramen"
+    }
   }
 ]

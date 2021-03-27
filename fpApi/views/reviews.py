@@ -14,7 +14,7 @@ class ReviewViewSet(viewsets.ModelViewSet):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializerCreate
     filter_fields = ('user', "menu_item_id")
-    
+
     def retrieve(self, request, pk=None):
         queryset = Review.objects.all()
         review = get_object_or_404(queryset, pk=pk)
@@ -26,13 +26,13 @@ class ReviewViewSet(viewsets.ModelViewSet):
         Returns:
             Response -- JSON serialized list of games
         """
-        # Get all game records from the database
+        # Get all review records from the database
         reviews = Review.objects.all()
 
         # Support filtering games by type
-        #    http://localhost:8000/games?type=1
+        #    http://localhost:8000/reviews?user=1
         #
-        # That URL will retrieve all tabletop games
+        # That URL will retrieve all reviews by user games
         user = self.request.query_params.get('user', None)
         if user is not None:
             reviews = reviews.filter(user__id=user)
