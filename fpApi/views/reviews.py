@@ -13,7 +13,7 @@ class ReviewViewSet(viewsets.ModelViewSet):
 
     queryset = Review.objects.all()
     serializer_class = ReviewSerializerCreate
-    filter_fields = ('user', "menu_item_id")
+    filter_fields = ('user', "menu_item_id", "timestamp")
 
     def retrieve(self, request, pk=None):
         queryset = Review.objects.all()

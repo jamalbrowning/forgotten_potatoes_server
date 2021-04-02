@@ -6,7 +6,8 @@
       "user": 1,
       "rating": 5,
       "comment": "wow this was so good",
-      "menu_item_id": 11
+      "menu_item_id": 11,
+      "timestamp": "2021-4-20"
     }
   },
   {
@@ -16,7 +17,8 @@
       "user": 1,
       "rating": 3,
       "comment": "wow this was so good",
-      "menu_item_id": 15
+      "menu_item_id": 15,
+      "timestamp": "2021-4-20"
     }
   },
   {
@@ -26,7 +28,8 @@
       "user": 2,
       "rating": 5,
       "comment": "wow this was so good",
-      "menu_item_id": 15
+      "menu_item_id": 15,
+      "timestamp": "2021-4-20"
     }
   }
 ]
