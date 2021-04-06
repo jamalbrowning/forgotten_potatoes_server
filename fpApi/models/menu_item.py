@@ -4,6 +4,8 @@ from django.db.models.fields import CharField
 
 
 class MenuItem(models.Model):
+    user = models.ForeignKey("PotatoUser", on_delete=CASCADE,
+                             related_name='menuitemReviewers', related_query_name="menuitemReviewer")
     restaurant = models.ForeignKey(
         "Restaurant", on_delete=models.CASCADE, null=True)
     name = models.CharField(max_length=50)

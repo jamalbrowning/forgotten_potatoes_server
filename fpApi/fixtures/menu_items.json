@@ -3,6 +3,7 @@
     "model": "fpApi.menuItem",
     "pk": 1,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Peel n' Eat Shrimp",
       "description":"1/2 lb. of shrimp served with cocktail sauce, creamy Cajun sauce and lemon wedges.",
@@ -14,6 +15,7 @@
     "model": "fpApi.menuItem",
     "pk": 2,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Made-From-Scratch Loaded Potatoes",
       "description":"Topped with bacon, shredded cheddar cheese, green onions & served with sour cream.",
@@ -25,6 +27,7 @@
     "model": "fpApi.menuItem",
     "pk": 3,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Mozzarella Sticks",
       "description":"Served with marinara sauce",
@@ -36,6 +39,7 @@
     "model": "fpApi.menuItem",
     "pk": 4,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Crispy Crab Cakes",
       "description":"Three lightly fried crab cakes served on a bed of crispy onions and a side of creamy Cajun sauce. ",
@@ -47,6 +51,7 @@
     "model": "fpApi.menuItem",
     "pk": 5,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Spinach & Artichoke Dip",
       "description":"A warm, creamy blend of spinach, artichokes, Swiss and Parmesan cheeses, served with house-made tortilla chips.",
@@ -58,6 +63,7 @@
     "model": "fpApi.menuItem",
     "pk": 6,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Mesquite Smokin Wings",
       "description":"Grilled over our real mesquite wood and smothered with your choice of Teriyaki, Buffalo, Chipotle or BBQ sauce.",
@@ -69,6 +75,7 @@
     "model": "fpApi.menuItem",
     "pk": 7,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Rockin' Onion Petals",
       "description":"Grab a bucketful of onion petals for the whole table. Served with Texas petal sauce for the ultimate dipping experience.",
@@ -80,6 +87,7 @@
     "model": "fpApi.menuItem",
     "pk": 8,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "6 OZ. Sirloin",
       "description":"Tender and juicy, this USDA Choice Sirloin is sure to please!",
@@ -91,6 +99,7 @@
     "model": "fpApi.menuItem",
     "pk": 9,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Chopped Steak",
       "description":"1/2 lb. chopped steak served on a bed of mashed potatoes covered with brown gravy, Brewski Onions® and sautéed mushrooms.",
@@ -102,6 +111,7 @@
     "model": "fpApi.menuItem",
     "pk": 10,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "The Logan",
       "description":"Our signature USDA Choice 12 oz. Sirloin.",
@@ -113,6 +123,7 @@
     "model": "fpApi.menuItem",
     "pk": 11,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Country Fried Steak",
       "description":"Topped with white pepper gravy.",
@@ -124,6 +135,7 @@
     "model": "fpApi.menuItem",
     "pk": 12,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "New York Strip",
       "description":"12 ounces of USDA Choice goodness.",
@@ -135,6 +147,7 @@
     "model": "fpApi.menuItem",
     "pk": 13,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Porterhouse",
       "description":"At 22 ounces, this USDA Choice steak is the king of the T-Bones.",
@@ -146,6 +159,7 @@
     "model": "fpApi.menuItem",
     "pk": 14,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Handcut Signature Ribeye",
       "description":"Hand-cut, marbled & full of flavor. 12 OZ",
@@ -157,6 +171,7 @@
     "model": "fpApi.menuItem",
     "pk": 15,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Handcut Signature Ribeye",
       "description":"Hand-cut, marbled & full of flavor. 16 OZ",
@@ -168,6 +183,7 @@
     "model": "fpApi.menuItem",
     "pk": 16,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "16 OZ. Roadhouse T-Bone",
       "description":"The perfect combo in one steak – get the tenderness of a filet and the well-marbled flavor of a strip.",
@@ -179,6 +195,7 @@
     "model": "fpApi.menuItem",
     "pk": 17,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Meat Loaf Roadies",
       "description":"Three mini meatloaf sliders with mashed potato, crispy onions & BBQ sauce on our signature yeast rolls.",
@@ -190,6 +207,7 @@
     "model": "fpApi.menuItem",
     "pk": 18,
     "fields": {
+      "user": 1,
       "restaurant": 1,
       "name": "Peppercorn Bacon Chicken Sandwhich",
       "description":"All-natural, grilled chicken breast smothered in our famous Parmesan Peppercorn dressing & topped with American cheese and thick-cut hardwood bacon. Served with house-made potato chips or fries.",
@@ -201,6 +219,7 @@
     "model": "fpApi.menuItem",
     "pk": 19,
     "fields": {
+      "user": 1,
       "restaurant": 2,
       "name": "Chicken Burrito",
       "description":"Chicken",
@@ -212,6 +231,7 @@
     "model": "fpApi.menuItem",
     "pk": 20,
     "fields": {
+      "user": 1,
       "restaurant": 2,
       "name": "Shredded Chicken Burrito",
       "description":"Chicken",
@@ -223,6 +243,7 @@
     "model": "fpApi.menuItem",
     "pk": 21,
     "fields": {
+      "user": 1,
       "restaurant": 2,
       "name": "Sweet Pork Barbacoa Burrito",
       "description":"Chicken",
@@ -234,6 +255,7 @@
     "model": "fpApi.menuItem",
     "pk": 22,
     "fields": {
+      "user": 1,
       "restaurant": 4,
       "name": "Tennessee Tonkotsu",
       "description":"",
@@ -245,6 +267,7 @@
     "model": "fpApi.menuItem",
     "pk": 23,
     "fields": {
+      "user": 1,
       "restaurant": 4,
       "name": "Shoyu",
       "description":"",
@@ -256,6 +279,7 @@
     "model": "fpApi.menuItem",
     "pk": 24,
     "fields": {
+      "user": 1,
       "restaurant": 4,
       "name": "Monster Style",
       "description":"",
@@ -267,6 +291,7 @@
     "model": "fpApi.menuItem",
     "pk": 25,
     "fields": {
+      "user": 1,
       "restaurant": 4,
       "name": "Spicy Miso",
       "description":"",
@@ -278,6 +303,7 @@
     "model": "fpApi.menuItem",
     "pk": 26,
     "fields": {
+      "user": 1,
       "restaurant": 4,
       "name": "Szechuan Pork Miso",
       "description":"",
